@@ -18,59 +18,59 @@ html {
   position: sticky;
   top: 0;
   z-index: 999;
+  background-color: var(--blue-green);  
+ 
 }
 
-.header1 {
-  background-color: #099d8d;
-  height: 55px;
-  opacity: 0.95;
+.team-name{
+color: white;   
+text-align: center;
+line-height: 50px;
+font-size: 16px;
+font-weight: bold; 
+background-color: var(--blue-green);
+height: 60px;
+padding-top: 15px;  
 }
-.team-name {
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  font-size: 16px;
-  font-weight: bold;
-}
-.team-name a {
-  color: white;
-  text-decoration: none;
-}
-
-.header2 {
-  background-color: #14d9c4;
-  height: 40px;
-  text-align: center;
-  opacity: 0.9;
+.menu{
+    color: white;   
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    height: 45px;
+    background-color: var(--aqua);        
 }
 
-ul.menu li {
-  display: inline-block;
-  margin-top: 12px;
+
+ul.menu li{
+display:inline-block;
+margin-top: 12px;
+
 }
 
-ul.menu li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+ul.menu li a{
+text-decoration: none;
+color: white;  
+font-weight: bold;
 }
 
-.team {
-  color: white;
-  font-weight: bold;
-  margin: 0 15px 0 0;
+.team{
+color: white;  
+font-weight: bold;
+margin: 0 15px 0 0;
 }
-.who {
-  color: white;
-  font-weight: bold;
-  margin: 0 15px;
+.who{
+color: white;
+font-weight: bold; 
+margin: 0 15px;
 }
 
-.contact {
-  color: white;
-  font-weight: bold;
-  margin: 0 0 0 15px;
+.contact{
+color: white;
+font-weight: bold;
+margin: 0 0 0 15px;
 }
+
 
 /* MAYTE: HERO Y TEAM */
 
