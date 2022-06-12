@@ -427,6 +427,15 @@ main {
   height: 45px;
 }
 /* ******* hero contacto****** */
+/* main {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  justify-items: top;
+} */
 .hero-contact {
   width: 100%;
   height: auto;
@@ -480,6 +489,9 @@ main {
   line-height: 24px;
   color: var(--grey);
 }
+.secondary-text::first-letter {
+  text-transform: uppercase;
+}
 
 .secondary-text span {
   color: var(--aqua);
@@ -489,9 +501,8 @@ main {
   max-width: 420px;
   height: 570px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 60px;
-  background-color: antiquewhite;
 }
 .contact-form .form-items {
   display: flex;
@@ -501,6 +512,9 @@ main {
   margin-top: 20px;
   color: var(--grey);
   font-size: 14px;
+}
+.form-items label:first-letter {
+  text-transform: uppercase;
 }
 
 .form-items span {
@@ -513,8 +527,11 @@ main {
 .form-items #mesage {
   height: 105px;
 }
-
+/* .mesage-text[type="text"] {
+  vertical-align: top;
+} */
 .form-items .submit {
+  margin-top: 40px;
   border-radius: 4px;
   background-color: var(--blue-green);
   border: none;
@@ -542,6 +559,17 @@ main {
   .contact-form .form {
     max-width: 442px;
   }
+
+  .form {
+    position: relative;
+  }
+  .form-items .submit {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 205px;
+    max-width: 205px;
+  }
 }
 
 /* ********* css desktop version***** */
@@ -558,5 +586,11 @@ main {
   }
   .contact-form .form {
     max-width: 600px;
+  }
+  .form-items .submit {
+    right: 0;
+    bottom: 160px;
+    width: 278px;
+    max-width: 278px;
   }
 }
