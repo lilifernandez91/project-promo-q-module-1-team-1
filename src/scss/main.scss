@@ -111,6 +111,13 @@ table {
   color: white;  
   font-weight: bold;
   }
+  .header .team-name a{
+  text-decoration: none;
+  color: white;  
+  font-weight: bold;
+  text-transform: uppercase;
+
+  }
   
   .team{
   color: white;  
@@ -170,7 +177,7 @@ table {
     scroll-margin-top: 95px;
   }
   
-  .team .title {
+  .team .title  {
     font-family: var(--secondary-font);
     color: var(--aqua);
     font-size: 24px;
@@ -178,11 +185,69 @@ table {
     line-height: 1.88;
   }
   
-  .team .text {
+  
+  .team-text {
     margin: 15px;
     color: #54585a;
     font-size: 16px;
     line-height: 1.5;
+  }
+  /* ***** contact***** creo que cuando hagamos particiones no hará falta */
+  .contact-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-form .contact-title{
+    margin-top: 30px;
+    font-family: var(--secondary-font);
+    color: var(--aqua);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.88;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+  .contact-form .text {
+    margin: 15px auto;
+    max-width: 500px;
+    color: #54585a;
+    font-size: 16px;
+    line-height: 1.5;
+    line-height: 24px;
+    text-align: center;
+    color: var(--grey);
+
+  }
+
+  .contact-form .secondary-text{
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--grey);
+
+
+  }
+
+  .secondary-text span{
+    color: var(--aqua);
+  }
+  .contact-form .form{
+    display: flex;
+    flex-direction: column;
+    
+   /*  justify-content: center; */
+
+    width: 90%;
+    max-width:500px ;
+    height: 570px;
+    margin: 0 auto;
+    background-color: 
+    antiquewhite;
+    
   }
   
   /* ************ DEBILIDADES Y FORTALEZAS */
