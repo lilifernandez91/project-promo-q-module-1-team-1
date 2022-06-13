@@ -309,7 +309,7 @@ table {
     flex-direction: column;
     background-color: white;
     justify-content: center;
-    border-top: 1px solid #b8b8b9;
+    border-top: 1px solid var(--cool-grey);
   }
   
   .Copyright {
@@ -326,7 +326,7 @@ table {
     margin-top: 20px;
     text-decoration: none;
     display: flex;
-    color: #54585a;
+    color: var(--grey);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     text-align: center;
@@ -338,7 +338,7 @@ table {
     text-decoration: none;
     line-height: 20px;
     text-transform: uppercase;
-    color: #54585a;
+    color: var(--grey);
     font-size: 14px;
   }
   
@@ -410,6 +410,35 @@ table {
       padding: 10px;    
     }
   }
+
+
+
+  @media screen and (min-width: 768px) {
+    .ul {
+      padding-right: 45px;
+      padding-bottom: 27px;
+    }
+    .links {
+      position: absolute;
+  
+      text-align: end;
+      justify-content: end;
+      line-height: 30px;
+    }
+    .logo {
+      align-self: start;
+      margin-left: 45px;
+      padding-bottom: 15px;
+    }
+  
+    .Copyright {
+      text-align: left;
+      padding-bottom: 15px;
+      padding-left: 45px;
+      line-height: 20px;
+    }
+ }
+
    /* ********* css desktop version***** */
    
    @media screen and (min-width: 1200px) {
@@ -451,3 +480,19 @@ table {
     padding: 10px;    
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .ul {
+    padding-right: 140px;
+    padding-bottom: 17px;
+  }
+
+  .logo {
+    margin-left: 138px;
+    padding-bottom: 5px;
+  }
+
+  .Copyright {
+    padding-left: 138px;
+  }
+   }
