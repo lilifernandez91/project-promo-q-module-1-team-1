@@ -252,6 +252,7 @@ table {
     color: var(--blue-green);
     margin-top: 30px;
     margin-bottom: 30px;
+    text-transform: uppercase;
   }
   
   .photo {
@@ -271,6 +272,8 @@ table {
   .profile {
     font-family: var(--principal-font);
     font-size: 16px;
+    max-width: 343px;
+    margin: auto;
     margin-bottom: 15px;
     line-height: 1.5;
     font-weight: 100;
@@ -289,13 +292,14 @@ table {
     left: 8px;
   }
   
-  .icon-social-network:last-child::after {
+  .icon-social-network-last::after {
     content: "";
   }
   
   .container-social-network {
     margin-bottom: 30px;
   }
+  
   
   /* SILVIA: FOOTER */
   
