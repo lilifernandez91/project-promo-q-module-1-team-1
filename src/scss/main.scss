@@ -158,6 +158,7 @@ html {
   top: 0;
   z-index: 999;
   background-color: var(--blue-green);
+  text-transform: uppercase;
 }
 
 .team-name {
@@ -171,16 +172,16 @@ html {
   padding-top: 15px;
 }
 .menu {
-  color: white;
-  text-align: center;
-  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 15px;
   font-weight: bold;
   height: 45px;
   background-color: var(--aqua);
 }
 
 ul.menu li {
-  display: inline-block;
   margin-top: 12px;
 }
 
@@ -189,28 +190,18 @@ ul.menu li a {
   color: white;
   font-weight: bold;
 }
-.header .team-name a {
-  text-decoration: none;
+.teamheader {
   color: white;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.team {
-  color: white;
-  font-weight: bold;
-  margin: 0 15px 0 0;
-}
 .who {
   color: white;
   font-weight: bold;
-  margin: 0 15px;
 }
-
 .contact {
   color: white;
   font-weight: bold;
-  margin: 0 0 0 15px;
 }
 
 /* MAYTE: HERO Y TEAM */
@@ -591,19 +582,19 @@ main {
     line-height: 24px;
     color: var(--grey);
   }
-  
+
   /* LILI: QUIENES SOMOS */
-  
+
   .profile-container {
     text-align: center;
   }
-  
+
   .section-quienes-somos {
     padding-left: 15px;
     padding-right: 15px;
     scroll-margin-top: 95px;
   }
-  
+
   .question {
     width: 100%;
     font-family: var(--secondary-font);
@@ -614,7 +605,7 @@ main {
     margin-bottom: 30px;
     text-transform: uppercase;
   }
-  
+
   .photo {
     width: 180px;
     height: 180px;
@@ -622,13 +613,13 @@ main {
     border-radius: 4px;
     border: solid 5px var(--black-8);
   }
-  
+
   .name {
     font-family: var(--principal-font);
     font-size: 20px;
     margin-bottom: 15px;
   }
-  
+
   .profile {
     font-family: var(--principal-font);
     font-size: 16px;
@@ -638,31 +629,30 @@ main {
     line-height: 1.5;
     font-weight: 100;
   }
-  
+
   .icon-social-network {
     color: var(--blue-green);
     font-size: 16px;
     margin-right: 15px;
   }
-  
+
   .icon-social-network::after {
     content: ".";
     position: relative;
     bottom: 5px;
     left: 8px;
   }
-  
+
   .icon-social-network-last::after {
     content: "";
   }
-  
+
   .container-social-network {
     margin-bottom: 30px;
   }
-  
-  
+
   /* SILVIA: FOOTER */
-  
+
   .footer-container {
     width: 100%;
     display: flex;
@@ -671,7 +661,7 @@ main {
     justify-content: center;
     border-top: 1px solid var(--cool-grey);
   }
-  
+
   .Copyright {
     width: 100;
     margin-top: 30px;
@@ -680,7 +670,7 @@ main {
     color: #b8b8b9;
     font-size: 14px;
   }
-  
+
   .links {
     width: 100%;
     margin-top: 20px;
@@ -693,7 +683,7 @@ main {
     justify-content: center;
     margin-bottom: 30px;
   }
-  
+
   .class-1 {
     text-decoration: none;
     line-height: 20px;
@@ -701,12 +691,12 @@ main {
     color: var(--grey);
     font-size: 14px;
   }
-  
+
   .logo {
     align-self: center;
     margin-bottom: 45px;
   }
-  
+
   .image-logo {
     height: 45px;
   }
@@ -717,20 +707,20 @@ main {
   }
   .img-contact {
     display: inline-block;
-  
+
     background-image: url(../images/foto-prueba.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  
+
     width: 100%;
     min-width: 320px;
     height: 40vh;
-  
+
     background-position: center;
   }
-  
+
   /* ****** css tablet version***** */
-  
+
   @media screen and (min-width: 768px) {
     .slogan {
       padding: 15px 30px 15px 30px;
@@ -740,38 +730,34 @@ main {
       margin-top: -81px;
       margin-left: 46px;
     }
-   
+
     .team {
-      margin-top: 45px ;
-    }
-   
-   }
-   @media screen and (min-width: 768px) {
- 
-    .header{
-      display: flex;
-      flex-direction: row;   
-      justify-content: space-between; 
-      background-size: 60px;
-    }
-     .team-name{
-      margin-left: 45px;
-      margin-top: 6px; 
-     }
-  
-    .menu{
-      background-color: var(--blue-green);
-      margin-top: 15px;  
-      margin-right: 45px;
-        }
-      
-    ul.menu li{
-      display: flex;
-      padding: 10px;    
+      margin-top: 45px;
     }
   }
+  @media screen and (min-width: 768px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-size: 60px;
+    }
+    .team-name {
+      margin-left: 45px;
+      margin-top: 6px;
+    }
 
+    .menu {
+      background-color: var(--blue-green);
+      margin-top: 15px;
+      margin-right: 45px;
+    }
 
+    ul.menu li {
+      display: flex;
+      padding: 10px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     .ul {
@@ -780,7 +766,7 @@ main {
     }
     .links {
       position: absolute;
-  
+
       text-align: end;
       justify-content: end;
       line-height: 30px;
@@ -790,73 +776,61 @@ main {
       margin-left: 45px;
       padding-bottom: 15px;
     }
-  
+
     .Copyright {
       text-align: left;
       padding-bottom: 15px;
       padding-left: 45px;
       line-height: 20px;
     }
- }
+  }
 
-   /* ********* css desktop version***** */
-   
-   @media screen and (min-width: 1200px) {
+  /* ********* css desktop version***** */
+
+  @media screen and (min-width: 1200px) {
     .slogan {
-     width: 514px;
-     height: 60px;
-     margin-top: -81px;
-     margin-left: 138px;
+      width: 514px;
+      height: 60px;
+      margin-top: -81px;
+      margin-left: 138px;
     }
-  .strenghts-container {
-    width: 440px;
+    .strenghts-container {
+      width: 440px;
+    }
+    .contact-form .form {
+      max-width: 600px;
+    }
+    .form-items .submit {
+      right: 0;
+      bottom: 160px;
+      width: 278px;
+      max-width: 278px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .ul {
+      padding-right: 140px;
+      padding-bottom: 17px;
+    }
+
+    .logo {
+      margin-left: 138px;
+      padding-bottom: 5px;
+    }
+
+    .Copyright {
+      padding-left: 138px;
+    }
+  }
+
+  /* ***** no pide en versión pantalla tan grande pero es que quedaba mal posicionado el botón */
+  @media screen and (min-width: 1440px) {
+    .form-items .submit {
+      right: 0;
+      bottom: 80px;
+      width: 278px;
+      max-width: 278px;
+    }
   }
 }
-
-/* ********* css desktop version***** */
-
-@media screen and (min-width: 1200px) {
-  .slogan {
-    width: 514px;
-    height: 60px;
-    margin-top: -81px;
-    margin-left: 138px;
-  }
-  .strenghts-container {
-    width: 440px;
-  }
-  .contact-form .form {
-    max-width: 600px;
-  }
-  .form-items .submit {
-    right: 0;
-    bottom: 160px;
-    width: 278px;
-    max-width: 278px;
-  }
-}
-/* ***** no pide en versión pantalla tan grande pero es que quedaba mal posicionado el botón */
-@media screen and (min-width: 1440px) {
-  .form-items .submit {
-    right: 0;
-    bottom: 80px;
-    width: 278px;
-    max-width: 278px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .ul {
-    padding-right: 140px;
-    padding-bottom: 17px;
-  }
-
-  .logo {
-    margin-left: 138px;
-    padding-bottom: 5px;
-  }
-
-  .Copyright {
-    padding-left: 138px;
-  }
-   }
