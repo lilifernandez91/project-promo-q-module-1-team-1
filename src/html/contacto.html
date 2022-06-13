@@ -35,7 +35,7 @@
     <header class="header">
       <div class="header1">
         <h1 class="team-name">
-          <a href="./index.html">NOMBRE DEL GRUPO</a>
+          <a href="./index.html">glims</a>
         </h1>
       </div>
       <div class="header2">
@@ -57,15 +57,51 @@
       <section class="contact-form">
         <div>
           <h2 class="contact-title">contacto</h2>
-          <p>
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sed
             odio numquam autem maiores consequatur laudantium quos.
           </p>
-          <p>Todos los campos marcados con <span>*</span> son obligatorios.</p>
+          <p class="secondary-text">
+            todos los campos marcados con <span>*</span> son obligatorios.
+          </p>
         </div>
-        <div class="form"></div>
+        <div class="form">
+          <form class="form-items" action="/signup" method="post">
+            <label for="name">nombre completo <span>*</span> </label>
+            <input placeholder="Nombre..." id="name" type="text" name="name" />
+
+            <label for="email">email <span>*</span> </label>
+            <input
+              placeholder="nombre.apellidos@mail.com"
+              id="email"
+              type="email"
+              name="email"
+            />
+
+            <label for="telefone">teléfono </label>
+            <input
+              placeholder="Ej:123456789"
+              id="telefone"
+              type="tel"
+              name="telefone"
+            />
+
+            <label for="mesage">mensaje <span>*</span> </label>
+            <input
+              class="mesage-text"
+              placeholder="¿Qué necesitas?"
+              maxlength="50"
+              id="mesage"
+              type="text"
+              name="mesage"
+            />
+
+            <input class="submit" type="submit" value="enviar" />
+          </form>
+        </div>
       </section>
     </main>
+
     <footer class="footer-container">
       <div class="Copyright">
         <p>Nombre del grupo &copy; 2022</p>
@@ -80,7 +116,7 @@
       <div class="logo">
         <img
           class="image-logo"
-          src="images\logo-adalab.png"
+          src="./assets/images/logo-adalab.png"
           alt="Logo Adalab"
         />
       </div>
