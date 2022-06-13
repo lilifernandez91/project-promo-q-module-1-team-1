@@ -390,15 +390,15 @@ main {
   flex-direction: column;
   background-color: white;
   justify-content: center;
-  border-top: 1px solid #b8b8b9;
+  border-top: 1px solid var(--cool-grey);
 }
 
 .Copyright {
-  width: 100;
+  width: 170px;
   margin-top: 30px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: #b8b8b9;
+  color: var(--cool-grey);
   font-size: 14px;
 }
 
@@ -407,7 +407,7 @@ main {
   margin-top: 20px;
   text-decoration: none;
   display: flex;
-  color: #54585a;
+  color: var(--grey);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   text-align: center;
@@ -419,7 +419,7 @@ main {
   text-decoration: none;
   line-height: 20px;
   text-transform: uppercase;
-  color: #54585a;
+  color: var(--grey);
   font-size: 14px;
 }
 
@@ -617,13 +617,14 @@ main {
     display: flex;
     padding: 10px;
   }
+  /*footer*/
   .ul {
     padding-right: 45px;
     padding-bottom: 27px;
   }
   .links {
     position: absolute;
-
+    right: 45px;
     text-align: end;
     justify-content: end;
     line-height: 30px;
@@ -681,10 +682,12 @@ main {
   .strenghts-container {
     width: 440px;
   }
-
-  .ul {
-    padding-right: 140px;
+ /*footer*/
+ .links {
+   
     padding-bottom: 17px;
+  
+    right: 138px;
   }
 
   .logo {
