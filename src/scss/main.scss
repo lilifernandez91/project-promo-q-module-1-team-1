@@ -159,6 +159,7 @@ html {
   z-index: 999;
   background-color: var(--blue-green);
   text-transform: uppercase;
+  opacity: 0.95;
 }
 
 .team-name {
@@ -169,7 +170,6 @@ html {
   font-weight: bold;
   background-color: var(--blue-green);
   height: 60px;
-  padding-top: 15px;
 }
 .menu {
   display: flex;
@@ -179,6 +179,7 @@ html {
   font-weight: bold;
   height: 45px;
   background-color: var(--aqua);
+  opacity: 0.90;
 }
 
 ul.menu li {
@@ -210,6 +211,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 
 .image {
   width: 100%;
@@ -252,7 +254,7 @@ main {
   line-height: 1.88;
 }
 
-.team-text {
+.team .text {
   margin: 15px;
   color: #54585a;
   font-size: 16px;
