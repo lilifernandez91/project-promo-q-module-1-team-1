@@ -243,7 +243,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  scroll-margin-top: 95px;
+  scroll-margin-top: 120px;
+  padding-top: 30px;
 }
 
 .team .title {
@@ -254,12 +255,20 @@ main {
   line-height: 1.88;
 }
 
-.team .text {
-  margin: 15px;
+.team .text1 {
   color: #54585a;
   font-size: 16px;
   line-height: 1.5;
+  margin: 10px 15px 15px 15px;
 }
+
+.team .text2 {
+  color: #54585a;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 15px 30px 15px;
+}
+
 
 /* ************ DEBILIDADES Y FORTALEZAS */
 .strengths {
@@ -365,7 +374,7 @@ main {
   left: 8px;
 }
 
-.icon-social-network:last-child::after {
+.icon-social-network-last::after {
   content: "";
 }
 
@@ -577,6 +586,14 @@ main {
   .team {
     margin-top: 45px;
   }
+
+  .team .text1 {
+    margin: 10px 45px 10px 45px;
+  }
+
+  .team .text2{
+    margin: 10px 45px 30px 45px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -648,6 +665,19 @@ main {
     margin-top: -81px;
     margin-left: 138px;
   }
+
+  .team {
+    margin-top: 0px;
+  }
+
+  .team .text1 {
+    margin: 10px 300px 10px 300px;
+  }
+
+  .team .text2{
+    margin: 10px 300px 60px 300px;
+  }
+
   .strenghts-container {
     width: 440px;
   }
