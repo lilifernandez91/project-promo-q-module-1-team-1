@@ -217,7 +217,6 @@ main {
   flex-direction: column;
 }
 
-
 .image {
   width: 100%;
   justify-items: top;
@@ -273,7 +272,6 @@ main {
   line-height: 1.5;
   margin: 10px 15px 30px 15px;
 }
-
 
 /* ************ DEBILIDADES Y FORTALEZAS */
 .strengths {
@@ -399,7 +397,6 @@ main {
 }
 
 .Copyright {
- 
   margin-top: 30px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -460,7 +457,6 @@ main {
   background-position: center;
 }
 
-/* ***** contact***** creo que cuando hagamos particiones no hará falta */
 .contact-form {
   width: 100%;
   height: auto;
@@ -531,6 +527,7 @@ main {
   height: 45px;
 }
 .form-items #mesage {
+  margin-top: 20px;
   height: 105px;
 }
 
@@ -596,7 +593,7 @@ main {
     margin: 10px 45px 10px 45px;
   }
 
-  .team .text2{
+  .team .text2 {
     margin: 10px 45px 30px 45px;
   }
 }
@@ -642,7 +639,6 @@ main {
   }
 
   .Copyright {
-   
     text-align: left;
     padding-bottom: 15px;
     padding-left: 45px;
@@ -682,18 +678,17 @@ main {
     margin: 10px 300px 10px 300px;
   }
 
-  .team .text2{
+  .team .text2 {
     margin: 10px 300px 60px 300px;
   }
 
   .strenghts-container {
     width: 440px;
   }
- /*footer*/
- .links {
-   
+  /*footer*/
+  .links {
     padding-bottom: 17px;
-  
+
     right: 138px;
   }
 
