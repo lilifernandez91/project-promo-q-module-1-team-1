@@ -354,6 +354,7 @@ main {
   font-family: var(--principal-font);
   font-size: 20px;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .profile {
@@ -627,6 +628,46 @@ main {
     display: flex;
     padding: 10px;
   }
+
+  // quienes somos
+
+  @media screen and (min-width: 768px){
+    .profile-container{
+      display: inline-flex;
+      width: 100%;
+    }
+  
+    .photo {
+      width: 205px;
+      height: 205px;
+    } 
+  
+    .bloque-2{
+      text-align: left;
+      margin-left: 30px;
+      padding-top: 20px;
+    }
+  
+    .profile {
+      max-width: 443px;
+    }
+  
+    .profile-container-right{
+      justify-content: right;
+      flex-direction: row-reverse;
+  
+      .icon-social-network-last{
+        margin-right: 0;
+      }
+    }
+  
+    .bloque-2-right{
+      text-align: right;
+      margin-right: 30px;
+      padding-top: 20px;
+    }
+  }
+
   /*footer*/
   .links {
     position: absolute;
@@ -714,6 +755,11 @@ main {
     width: 278px;
     max-width: 278px;
   }
+
+  .photo {
+    width: 278px;
+    height: 278px;
+  } 
 }
 
 /* ***** no pide en versión pantalla tan grande pero es que quedaba mal posicionado el botón */
