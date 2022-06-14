@@ -163,6 +163,9 @@ html {
 }
 
 .team-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   line-height: 50px;
@@ -177,9 +180,11 @@ html {
   justify-content: space-evenly;
   font-size: 15px;
   font-weight: bold;
-  height: 45px;
+  height: 30px;
   background-color: var(--aqua);
   opacity: 0.9;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 ul.menu li {
@@ -602,13 +607,18 @@ main {
   }
   .team-name {
     margin-left: 45px;
-    margin-top: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--blue-green);
     margin-top: 15px;
     margin-right: 45px;
+    margin-bottom: 15px;
   }
 
   ul.menu li {
@@ -616,10 +626,7 @@ main {
     padding: 10px;
   }
   /*footer*/
-  .ul {
-    padding-right: 45px;
-    padding-bottom: 27px;
-  }
+
   .links {
     position: absolute;
     right: 45px;
