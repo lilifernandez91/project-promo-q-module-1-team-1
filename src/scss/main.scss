@@ -217,9 +217,12 @@ main {
   flex-direction: column;
 }
 
-.image {
+.hero {
+  height: 75vh;
   width: 100%;
-  justify-items: top;
+  background: url(../images/imagen-hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .slogan {
@@ -279,7 +282,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 320px;
   height: auto;
   align-content: center;
   padding: 45px 15px;
@@ -543,39 +545,6 @@ main {
   text-transform: uppercase;
 }
 
-/* ****** css tablet version***** */
-
-/* @media screen and (min-width: 768px) {
-  .slogan {
-    padding: 15px 30px 15px 30px;
-    opacity: 0.8;
-    width: 381px;
-    height: 50px;
-    margin-top: -81px;
-    margin-left: 46px;
-  }
-
-  .team {
-    margin-top: 45px;
-  }
-  .contact-form .form {
-    max-width: 442px;
-  }
-
-  .form {
-    position: relative;
-  }
-  .form-items .submit {
-    position: absolute;
-    right: 0;
-    bottom: 60px;
-    width: 205px;
-    max-width: 205px;
-  }
-} */
-
-/* ****** css tablet version***** */
-
 @media screen and (min-width: 768px) {
   .slogan {
     padding: 15px 30px 15px 30px;
@@ -628,37 +597,40 @@ main {
 
   // quienes somos
 
-  @media screen and (min-width: 768px){
-    .profile-container{
+  @media screen and (min-width: 768px) {
+    .section-quienes-somos {
+      padding: 0px 50px;
+    }
+    .profile-container {
       display: inline-flex;
       width: 100%;
     }
-  
+
     .photo {
       width: 205px;
       height: 205px;
-    } 
-  
-    .bloque-2{
+    }
+
+    .bloque-2 {
       text-align: left;
       margin-left: 30px;
       padding-top: 20px;
     }
-  
+
     .profile {
       max-width: 443px;
     }
-  
-    .profile-container-right{
+
+    .profile-container-right {
       justify-content: right;
       flex-direction: row-reverse;
-  
-      .icon-social-network-last{
+
+      .icon-social-network-last {
         margin-right: 0;
       }
     }
-  
-    .bloque-2-right{
+
+    .bloque-2-right {
       text-align: right;
       margin-right: 30px;
       padding-top: 20px;
@@ -735,8 +707,9 @@ main {
   }
 
   .logo {
-    margin-left: 138px;
+    padding-left: 127px;
     padding-bottom: 5px;
+    margin: 0px;
   }
 
   .Copyright {
@@ -755,7 +728,11 @@ main {
   .photo {
     width: 278px;
     height: 278px;
-  } 
+  }
+
+  .section-quienes-somos {
+    padding: 0px 140px;
+  }
 }
 
 /* ***** no pide en versión pantalla tan grande pero es que quedaba mal posicionado el botón */
@@ -765,5 +742,11 @@ main {
     bottom: 80px;
     width: 278px;
     max-width: 278px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .section-quienes-somos {
+    padding: 0px 300px;
   }
 }
