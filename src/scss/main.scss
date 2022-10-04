@@ -223,6 +223,11 @@ main {
   background: url(../images/GLIMS-ochentas.png) no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 800px) {
+    height: 39vh;
+    background-size: contain;
+  }
 }
 
 .slogan {
